@@ -11,6 +11,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: #666666;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -23,16 +31,22 @@ body {
 
 #logo {
   display: block;
-  margin: 15px auto;
+  margin: 8px auto;
   width: 80px;
 }
 
+.navbar {
+  border-radius: 0;
+  background-color: #666666;
+  margin-bottom: 0px;
+}
+
 .navbar-toggle {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .icon-bar {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 @media (min-width: 768px) {
@@ -45,7 +59,42 @@ body {
   .navbar .navbar-collapse {
     text-align: center;
   }
+
+  .navbar .navbar-nav > li {
+    padding: 0px 30px;
+  }
+
 }
+
+.caption-home {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.caption-home span.border {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: 1;
+}
+
+.parallax-home {
+  background: image_url("james_work.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.75;
+}
+
 
 .footer {
   position: absolute;
