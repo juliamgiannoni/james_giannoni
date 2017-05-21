@@ -1,1 +1,21 @@
-<h1>LANDING PAGE</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>James Giannoni</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <%= favicon_link_tag 'favicon.ico' %>
+  </head>
+
+  <body class="landing-image">
+    <div class="landing-caption flip-in-hor-bottom">
+      <a href="/home"><span class="border">JAMES GIANNONI</span></a>
+    </div>
+  </body>
+</html>
+
+

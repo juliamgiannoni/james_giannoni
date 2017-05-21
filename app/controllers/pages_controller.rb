@@ -4,4 +4,9 @@ class PagesController < ApplicationController
     render template: "pages/#{params[:page]}"
   end
 
+  def landing
+    render layout: false
+  end
+
 end
+
