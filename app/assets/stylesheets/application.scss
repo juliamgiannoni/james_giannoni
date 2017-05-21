@@ -58,11 +58,10 @@ div.flip-in-hor-bottom {
   background-color: white;
   color: black;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 10px;
   opacity: 0.8;
 }
-
 
 
 // html {
@@ -111,6 +110,23 @@ body {
   }
 
 }
+
+// THESE STYLES SHOULD ONLY BE APPLIED WHEN DEVICE WIDTH IS 576PX OR LESS
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.landing-caption span.border {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  opacity: 0.8;
+}
+
 
 .footer {
   position: absolute;
