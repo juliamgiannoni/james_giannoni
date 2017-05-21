@@ -13,15 +13,52 @@
     <style>
       .landing-body {
         height: 100%;
-        margin: 0 0 70px 0;
+        margin: 0 0 50px 0;
+      }
+
+      .landing-caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+      }
+
+      .landing-caption > a {
+        color: white;
+      }
+
+      .landing-caption span.name {
+        background-color: rgba(0,0,0, 0.7);
+        color: white;
+        font-size: 20px;
+        padding: 20px 20px 50px 20px;
+        letter-spacing: 8px;
+      }
+
+      .landing-caption span.title {
+        font-size: 16px;
+        letter-spacing: 5px;
+        line-height: 30px;
       }
 
       .landing-footer {
         position: absolute;
         width: 100%;
-        height: 70px;
+        height: 50px;
         text-align: center;
-        background-color: lightgreen;
+        background-color: #666666;
+      }
+
+      #facebook-logo-landing, #twitter-logo-landing, #instagram-logo-landing {
+        margin: 12.5px 30px;
+        width: 25px;
+      }
+
+      #youtube-logo-landing {
+        margin: 10px 30px;
+        width: 30px;
       }
 
       @media only screen and (max-width: 576px) {
@@ -31,16 +68,38 @@
           margin: 0 0 50px 0;
         }
 
+        .landing-caption span.name {
+          background-color: rgba(0,0,0, 0.7);
+          color: white;
+          padding: 15px 15px 38px 15px;
+          font-size: 15px;
+          letter-spacing: 5px;
+        }
+
+        .landing-caption span.title {
+          font-size: 12px;
+          letter-spacing: 2px;
+          line-height: 20px;
+        }
+
         .landing-footer {
           position: absolute;
           width: 100%;
           height: 50px;
           text-align: center;
-          background-color: pink;
+          background-color: #666666;
+        }
+
+        #facebook-logo-landing, #twitter-logo-landing, #instagram-logo-landing {
+          margin: 12.5px 15px;
+          width: 25px;
+        }
+
+        #youtube-logo-landing {
+          margin: 10px 15px;
+          width: 30px;
         }
       }
-
-
     </style>
   </head>
 
@@ -56,7 +115,10 @@
     </div>
 
     <footer class="landing-footer">
-      <p>social media icons here</p>
+      <a href="https://www.facebook.com/james.giannoni" target="_blank"><%= image_tag ("facebook.svg"), id: "facebook-logo-landing", alt: "Facebook" %></a>
+      <a href="https://twitter.com/james_giannoni" target="_blank"><%= image_tag ("twitter.svg"), id: "twitter-logo-landing", alt: "Twitter" %></a>
+      <a href="https://www.youtube.com/channel/UC8EqJcrlPQtBMGUVKaRMQtw" target="_blank"><%= image_tag ("youtube.svg"), id: "youtube-logo-landing", alt: "YouTube" %></a>
+      <a href="https://www.instagram.com/james_giannoni/" target="_blank"><%= image_tag ("instagram.svg"), id: "instagram-logo-landing", alt: "Instagram" %></a>
     </footer>
   </body>
 </html>
