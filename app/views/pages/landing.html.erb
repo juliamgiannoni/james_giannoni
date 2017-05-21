@@ -9,9 +9,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <%= favicon_link_tag 'favicon.ico' %>
+
+    <style>
+      .landing-body {
+        height: 100%;
+        margin: 0 0 70px 0;
+      }
+
+      .landing-footer {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        background-color: lightgreen;
+      }
+
+      @media only screen and (max-width: 576px) {
+        .landing-body {
+          background-color: lightblue;
+          height: 100%;
+          margin: 0 0 50px 0;
+        }
+
+        .landing-footer {
+          position: absolute;
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          background-color: pink;
+        }
+      }
+
+
+    </style>
   </head>
 
-  <body>
+  <body class="landing-body">
     <div class="landing-image">
       <div class="landing-caption flip-in-hor-bottom">
         <a href="/home">
@@ -21,6 +54,10 @@
         </a>
       </div>
     </div>
+
+    <footer class="landing-footer">
+      <p>social media icons here</p>
+    </footer>
   </body>
 </html>
 

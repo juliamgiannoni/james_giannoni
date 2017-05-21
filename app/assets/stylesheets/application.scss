@@ -15,8 +15,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body, html {
+html {
+  position: relative;
   height: 100%;
+}
+
+body {
   margin: 0;
 }
 
@@ -115,15 +119,15 @@ a:hover {
   color: #666666;
 }
 
-
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
+  overflow: hidden;
+  background: orange;
+  height: 70px;
 }
-
-
 
 
 // THESE STYLES SHOULD ONLY BE APPLIED WHEN DEVICE WIDTH IS 576PX OR LESS
@@ -145,6 +149,17 @@ a:hover {
     letter-spacing: 2px;
     line-height: 20px;
   }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: purple;
+    height: 50px;
+  }
+
 }
 
 
