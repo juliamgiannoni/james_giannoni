@@ -15,6 +15,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+  text-align: center;
+}
+
 .html {
   position: relative;
   min-height: 100%;
@@ -32,10 +36,78 @@ a:hover {
   text-decoration: none;
 }
 
+.email-button {
+  color: white;
+  padding: 15px;
+  background-color: #666666;
+  border: solid 1px #666666;
+}
+
+.email-button:hover {
+  color: #666666;
+  padding: 15px;
+  background-color: white;
+  border: solid 1px #666666;
+}
+
+.email-button:visited {
+  text-decoration: none;
+}
+
 .flip-in-hor-bottom {
   -webkit-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   -moz-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+//NAVBAR STYLING
+#logo {
+  margin: auto;
+  width: 40px;
+}
+
+.navbar-toggle { //hamburger menu
+  border: 1px solid white;
+}
+
+.icon-bar { //hamburger menu
+  border: 1px solid white;
+}
+
+.navbar { //navbar with links
+  border-radius: 0;
+  background-color: #666666;
+  margin-bottom: 0px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-links {
+  padding: 0px 30px;
+}
+
+.navbar-links > a {
+  color: white;
+}
+
+.navbar-links > a:hover {
+  color: #666666;
+}
+
+li.navbar-logo > a.navbar-logo {
+  padding: 5px 20px;
+}
+
+li.navbar-logo > a.navbar-logo:hover {
+  background-color: transparent;
 }
 
 //IMAGES
@@ -107,55 +179,13 @@ a:hover {
   letter-spacing: 10px;
 }
 
-
-//NAVBAR STYLING
-#logo {
-  margin: auto;
-  width: 40px;
-}
-
-.navbar-toggle { //hamburger menu
-  border: 1px solid white;
-}
-
-.icon-bar { //hamburger menu
-  border: 1px solid white;
-}
-
-.navbar { //navbar with links
-  border-radius: 0;
-  background-color: #666666;
-  margin-bottom: 0px;
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
+//INDIVIDUAL PAGE ELEMENTS STYLING
+#resume {
   text-align: center;
 }
 
-.navbar-links {
-  padding: 0px 30px;
-}
-
-.navbar-links > a {
-  color: white;
-}
-
-.navbar-links > a:hover {
-  color: #666666;
-}
-
-li.navbar-logo > a.navbar-logo {
-  padding: 5px 20px;
-}
-
-li.navbar-logo > a.navbar-logo:hover {
-  background-color: transparent;
+#resume > img {
+  height: 1000px;
 }
 
 
@@ -199,7 +229,6 @@ li.navbar-logo > a.navbar-logo:hover {
     margin: 20px;
   }
 
-
   .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
     max-height: 100%;
     background-position: center top;
@@ -221,6 +250,10 @@ li.navbar-logo > a.navbar-logo:hover {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 10px;
+  }
+
+  #resume > img {
+    height: 380px;
   }
 
   .footer {
