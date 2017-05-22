@@ -79,9 +79,9 @@ a:hover {
 }
 
 .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
-  min-height: 700px;
+  min-height: 800px;
   position: relative;
-  opacity: 0.75;
+  opacity: 0.8;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +89,6 @@ a:hover {
 
 
 //CAPTION STYLING
-
 .caption {
   position: absolute;
   left: 0;
@@ -100,10 +99,12 @@ a:hover {
 }
 
 .caption span.border {
-  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.85);
+  padding: 18px;
   font-size: 35px;
   font-weight: bold;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
 }
 
 
@@ -198,9 +199,28 @@ li.navbar-logo > a.navbar-logo:hover {
     margin: 20px;
   }
 
-  .home-image {
+
+  .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
     max-height: 100%;
     background-position: center top;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .caption span.border {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.85);
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
   }
 
   .footer {
