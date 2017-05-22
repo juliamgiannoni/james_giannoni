@@ -247,22 +247,14 @@ li.navbar-logo > a.navbar-logo:hover {
     width: 55px;
   }
 
-  .html {
-    position: relative;
-    min-height: 100%;
-  }
-
-  .body {
-    height: 100%;
-  }
-
   .row {
     margin: 20px;
   }
 
   .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
-    min-width: 100%;
+    min-height: 730px;
     background-position: center top;
+    background-size: cover;
   }
 
   .caption {
