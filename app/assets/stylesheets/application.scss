@@ -32,6 +32,10 @@ h3 {
   margin: 20px;
 }
 
+.col-xs-12 {
+  padding: 15px;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -191,7 +195,7 @@ li.navbar-logo > a.navbar-logo:hover {
 }
 
 #resume > img {
-  height: 1000px;
+  height: 900px;
 }
 
 
@@ -214,7 +218,7 @@ li.navbar-logo > a.navbar-logo:hover {
 
 
 // THESE STYLES SHOULD ONLY BE APPLIED WHEN DEVICE WIDTH IS 576PX OR LESS
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
 
   #logo {
     display: block;
@@ -276,6 +280,15 @@ li.navbar-logo > a.navbar-logo:hover {
   #youtube-logo {
     margin: 10px 15px;
     width: 30px;
+  }
+
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
+
+  .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
+    min-height: 1366px;
+    background-position: center top;
   }
 
 }
