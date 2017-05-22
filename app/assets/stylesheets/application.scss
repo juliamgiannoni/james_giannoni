@@ -10,8 +10,8 @@
 // ANIMATIONS
 @-webkit-keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}
 
-// GENERAL STYLING
 
+// GENERAL STYLING
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -190,7 +190,6 @@ li.navbar-logo > a.navbar-logo:hover {
   background-size: cover;
 }
 
-
 //CAPTION STYLING
 .caption {
   position: absolute;
@@ -210,7 +209,7 @@ li.navbar-logo > a.navbar-logo:hover {
   letter-spacing: 10px;
 }
 
-//INDIVIDUAL PAGE ELEMENTS STYLING
+//RESUME STYLING
 #resume {
   text-align: center;
 }
@@ -218,7 +217,6 @@ li.navbar-logo > a.navbar-logo:hover {
 #resume > img {
   height: 900px;
 }
-
 
 // FOOTER STYLING
 .footer {
@@ -237,8 +235,6 @@ li.navbar-logo > a.navbar-logo:hover {
   width: 30px;
 }
 
-
-// THESE STYLES SHOULD ONLY BE APPLIED WHEN DEVICE WIDTH IS 576PX OR LESS
 @media only screen and (max-width: 767px) {
 
   #logo {
@@ -305,6 +301,3 @@ li.navbar-logo > a.navbar-logo:hover {
   }
 
 }
-
-
-
