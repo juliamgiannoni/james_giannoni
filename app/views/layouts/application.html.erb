@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
   <head>
     <title>James Giannoni</title>
     <%= csrf_meta_tags %>
@@ -11,9 +11,9 @@
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
 
-  <body>
+  <body class="body">
     <header role="banner">
-      <a href="/home"><%= image_tag ("james_logo_black.svg"), id: "logo", alt: "JG Logo" %></a>
+
     <nav id="navbar-primary" class="navbar navbar-toggleable-md navbar-light bg-faded">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,6 +28,7 @@
           <ul class="nav navbar-nav">
             <li class="navbar-links"><a href="/resume">RESUME</a></li>
             <li class="navbar-links"><a href="/work">WORK</a></li>
+            <li class="navbar-logo"><a href="/home" class="navbar-logo"><%= image_tag ("james_logo_white.svg"), id: "logo", alt: "JG Logo" %></a></li>
             <li class="navbar-links"><a href="/lessons">LESSONS</a></li>
             <li class="navbar-links"><a href="/contact">CONTACT</a></li>
           </ul>

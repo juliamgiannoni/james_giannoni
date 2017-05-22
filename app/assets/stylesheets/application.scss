@@ -15,19 +15,25 @@
   font-family: 'Roboto', sans-serif;
 }
 
-html {
+.html {
   position: relative;
-  height: 100%;
+  min-height: 100%;
 }
 
-body {
-  margin: 0;
+.body {
+  margin-bottom: 50px;
+  height: 100%;
 }
 
 a:hover {
   text-decoration: none;
 }
 
+.flip-in-hor-bottom {
+  -webkit-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -moz-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 //IMAGES
 .landing-image {
@@ -41,18 +47,42 @@ a:hover {
   background-size: cover;
 }
 
-.flip-in-hor-bottom {
-  -webkit-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  -moz-animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: flip-in-hor-bottom 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.home-image {
+  background-image: url("james_home.jpg");
+  min-height: 600px;
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+//CAPTION STYLING
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  // background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
 
 
 //NAVBAR STYLING
 #logo {
-  display: block;
-  margin: 8px auto;
-  width: 80px;
+  margin: auto;
+  width: 40px;
 }
 
 .navbar-toggle { //hamburger menu
@@ -79,7 +109,7 @@ a:hover {
   text-align: center;
 }
 
-.navbar .navbar-nav > li {
+.navbar-links {
   padding: 0px 30px;
 }
 
@@ -89,6 +119,14 @@ a:hover {
 
 .navbar-links > a:hover {
   color: #666666;
+}
+
+li.navbar-logo > a.navbar-logo {
+  padding: 5px 20px;
+}
+
+li.navbar-logo > a.navbar-logo:hover {
+  background-color: transparent;
 }
 
 
@@ -117,7 +155,26 @@ a:hover {
 
 // THESE STYLES SHOULD ONLY BE APPLIED WHEN DEVICE WIDTH IS 576PX OR LESS
 @media only screen and (max-width: 576px) {
-  body {
+
+  #logo {
+    display: block;
+    margin: 4px auto;
+    width: 55px;
+  }
+
+  .html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .body {
+    margin-bottom: 50px;
+    height: 100%;
+  }
+
+  .home-image {
+    min-height: 350px;
+    background-position: center top;
   }
 
   .footer {
