@@ -36,16 +36,22 @@ a:hover {
   text-decoration: none;
 }
 
-.email-button {
+.email-button, .phone-button {
   color: white;
-  padding: 15px;
   background-color: #666666;
   border: solid 1px #666666;
 }
 
-.email-button:hover {
-  color: #666666;
+.email-button {
   padding: 15px;
+}
+
+.phone-button {
+  padding: 13px;
+}
+
+.email-button:hover, .phone-button:hover {
+  color: #666666;
   background-color: white;
   border: solid 1px #666666;
 }
