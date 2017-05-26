@@ -187,6 +187,9 @@ li.navbar-logo > a.navbar-logo:hover {
   opacity: 0.8;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -250,6 +253,7 @@ li.navbar-logo > a.navbar-logo:hover {
   .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
     min-height: 730px;
     background-position: center top;
+    background-attachment: scroll;
     background-size: cover;
   }
 
