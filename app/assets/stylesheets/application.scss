@@ -257,13 +257,16 @@ li.navbar-logo > a.navbar-logo:hover {
     background-attachment: scroll;
     background-position: center top;
     background-size: cover;
-    // min-height: 80%;
+    min-height: 300px;
+    // -webkit-background-size: 50%;
+    // -moz-background-size: 50%;
+    // -o-background-size: 50%;
   }
 
   .caption {
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 50%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -272,10 +275,10 @@ li.navbar-logo > a.navbar-logo:hover {
   .caption span.border {
     background-color: rgba(255, 255, 255, 0.7);
     color: rgba(0, 0, 0, 0.85);
-    padding: 18px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 13px;
     font-weight: bold;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
   }
 
   #resume > img {
