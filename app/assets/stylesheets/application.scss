@@ -65,14 +65,7 @@ a:hover {
   color: white;
   background-color: #666666;
   border: solid 1px #666666;
-}
-
-.email-button {
   padding: 15px;
-}
-
-.phone-button {
-  padding: 13px;
 }
 
 .email-button:hover, .phone-button:hover {
@@ -81,7 +74,7 @@ a:hover {
   border: solid 1px #666666;
 }
 
-.email-button:visited {
+.email-button:visited, .phone-button:visited {
   text-decoration: none;
 }
 
