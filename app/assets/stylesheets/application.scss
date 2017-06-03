@@ -254,10 +254,10 @@ li.navbar-logo > a.navbar-logo:hover {
   }
 
   .home-image, .resume-image, .work-image, .lessons-image, .contact-image {
+    min-height: 300px;
     background-attachment: scroll;
     background-position: center top;
     background-size: cover;
-    min-height: 300px;
   }
 
   .caption {
